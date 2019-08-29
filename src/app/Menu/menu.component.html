@@ -1,0 +1,33 @@
+<!-- <div style="border:1px solid blue;"> -->
+<div>
+
+  <div class="sideBar" color="primary">
+    <!-- This section gets pushed to the top-->
+    <div class="sideBar__section">
+      <div class="sideBar__item is-side-bar-item-selected"><a [routerLink]="['/dashboard']" i18n="@@Dashboard">Dashboard</a></div>
+      <div class="sideBar__item"> <a [routerLink]= "['/task']" i18n="@@Task">Task</a></div>
+      <div class="sideBar__item"> <a [routerLink]= "['/reports']" i18n="@@Reports">Reports</a></div>
+    </div>
+    <!-- This section gets pushed to the bottom-->
+    <div class="sideBar__section">
+        <div class="sideBar__item"> <a [routerLink]= "['/settings']" i18n="@@Settings">Settings</a></div>
+    </div>
+  </div>
+
+  <!-- Material -->
+  <mat-nav-list>
+    <a mat-list-item>
+      <mat-icon>dashboard</mat-icon> Dashboard
+    </a>
+    <a mat-list-item>
+      <mat-icon>content_paste</mat-icon> Task
+    </a>
+    <a mat-list-item>
+      <mat-icon>library_books</mat-icon> Reports
+    </a>
+    <a mat-list-item>
+      <mat-icon>settings</mat-icon> Settings
+    </a>
+  </mat-nav-list>
+
+</div>

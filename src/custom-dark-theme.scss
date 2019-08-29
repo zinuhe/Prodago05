@@ -1,0 +1,17 @@
+// Import library functions for theme creation.
+@import '~@angular/material/theming';
+
+// Include non-theme styles for core.
+@include mat-core();
+
+// Define your application's custom theme.
+$custom-dark-theme-primary: mat-palette($mat-grey, 900);
+$custom-dark-theme-accent:mat-palette($mat-pink, A200, A100, A400);
+$custom-dark-theme-warn: mat-palette($mat-red);
+$custom-dark-theme: mat-light-theme($custom-dark-theme-primary, $custom-dark-theme-accent, $custom-dark-theme-warn);
+
+// Include theme styles for Angular Material components.
+@include angular-material-theme($custom-dark-theme);
+
+// Include theme styles for your custom components.
+// @include candy-carousel-theme($theme);
